@@ -3,14 +3,13 @@
 This project provides a set of Python scripts to scrape documentation pages from `reflex.dev`, process the HTML content, and convert it into Markdown format using a local LLM via Ollama.
 
 ## Project Structure
-
-SCRAPING/
-├── documents/ # (Output: Generated Markdown files)
-├── json_html/ # (Intermediate: JSON files with scraped HTML sections)
+Reflex.dev-docs-for-llms/
+├── documents/                 # Output: Generated Markdown files
+├── json_html/                 # Intermediate: JSON files with scraped HTML sections
 ├── extract_content_to_markdown.py
 ├── extract_links.py
-├── links.txt # (Output: List of scraped documentation links)
-├── load_links_to_db.py # (Helper script: Loads links.txt into the database)
+├── links.txt                  # Output: List of scraped documentation links
+├── load_links_to_db.py        # Helper script: Loads links.txt into the database
 ├── scrap_pages.py
 └── utils.py
 
@@ -38,7 +37,7 @@ A utility script (`utils.py`) provides shared functions for database interaction
 
 ## Prerequisites
 
-*   **Python 3.x**
+*   **Python 3.12**
 *   **Pip** (Python package installer)
 *   **Mozilla Firefox**
 *   **Geckodriver:** Download the executable compatible with your Firefox version and OS from [mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases). Place it in the project's root directory (next to `extract_links.py`, `load_links_to_db.py`, etc.) or update the `DRIVER_PATH` constant in `extract_links.py` and `scrap_pages.py`.
@@ -53,8 +52,8 @@ A utility script (`utils.py`) provides shared functions for database interaction
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
-    cd <your-repository-directory>
+    git clone git@github.com:EduardoVparga/Reflex.dev-docs-for-llms.git
+    cd Reflex.dev-docs-for-llms
     ```
 2.  **Create a virtual environment (recommended):**
     ```bash
