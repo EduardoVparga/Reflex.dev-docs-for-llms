@@ -2,17 +2,6 @@
 
 This project provides a set of Python scripts to scrape documentation pages from `reflex.dev`, process the HTML content, and convert it into Markdown format using a local LLM via Ollama.
 
-## Project Structure
-Reflex.dev-docs-for-llms/
-├── documents/                 # Output: Generated Markdown files
-├── json_html/                 # Intermediate: JSON files with scraped HTML sections
-├── extract_content_to_markdown.py
-├── extract_links.py
-├── links.txt                  # Output: List of scraped documentation links
-├── load_links_to_db.py        # Helper script: Loads links.txt into the database
-├── scrap_pages.py
-└── utils.py
-
 ## Overview
 
 The process involves three main steps, orchestrated by separate scripts:
@@ -52,7 +41,7 @@ A utility script (`utils.py`) provides shared functions for database interaction
 
 1.  **Clone the repository:**
     ```bash
-    git clone git@github.com:EduardoVparga/Reflex.dev-docs-for-llms.git
+    git clone https://github.com/EduardoVparga/Reflex.dev-docs-for-llms.git
     cd Reflex.dev-docs-for-llms
     ```
 2.  **Create a virtual environment (recommended):**
